@@ -1,38 +1,36 @@
 # IoT4ETA
+````
 Make a tiny, internet-connected lamp or nightlight that alerts you about current traffic on your commute.
 
 Suitable for beginners! Easy! Adaptable! Fun! Non-toxic!
 
-Level up on basic * Javascript * electronics * node on [Azure](http://azure.microsoft.com/) * web APIs * microcontrollers *
+IoT4ETA ("Internet of Things 4 Estimated Time of Arrival") by Rachel Simone Weil <3
+````
 
-Follow along with step-by-step instructions at [github.com/hxlnt/iot4eta](http://www.github.com/hxlnt/iot4eta)
+## Overview and purpose
 
-IoT4ETA ("Internet of Things 4 Estimated Time of Arrival") by [Rachel Simone Weil](http://www.nobadmemories.com/) <3
+IoT4ETA brings together a [Particle Photon](http://particle.io) microcontroller and the [Bing Maps Routes API](https://msdn.microsoft.com/en-us/library/ff701713.aspx) to give you real-time traffic updates about a given driving commute. In this project, the Photon's on-board blue LED is used to signify little-to-no traffic delays (an illuminated light), moderate traffic delays (a slowly flashing light), or severe traffic delays (a rapidly flashing light). The start and endpoints of the driving route, as well as what constitutes moderate and severe traffic delays, are completely customizable. Though not detailed here, the use of the Traffic API could be further expanded to monitor public transportation delays or to display graphic or textual information about roadway construction, for example.
 
-## What you'll need
-This is a preview of the materials, software, and accounts you'll need for this project. Don't worry if you don't recognize or know how to get a hold of these things--the step-by-step instructions will guide you through setup!
-
-Materials | Accounts and credentials | (Free) software and packages
---------- | ------------------------ | ----------------------------
-[Particle Photon](http://particle.io) | WiFi access | [node](http://nodejs.org)
-MicroUSB-to-USB cable | [Particle Build account](http://build.particle.io) (free) | [git](https://git-scm.com/)
-PC or Mac with a USB port | [Bing Maps developer account](http://bingmapsportal.com) (free) | [npm](https://www.npmjs.com/) or [bower](http://www.bower.io)
-*Recommended:* Mini-breadboard, LEDs, LCD display, art supplies, or other goodies for customizing this project | *Recommended:* [Azure account](http://portal.azure.com/) (free trial or paid) for hosting node app in the cloud | [Particle phone app](https://docs.particle.io/guide/getting-started/start/photon/#prerequisites-for-setup) or the Particle CLI for [Windows](https://docs.particle.io/guide/getting-started/connect/photon/#using-windows) or [Mac OS X](https://docs.particle.io/guide/getting-started/connect/photon/#using-osx)
-                                         | | [particle-api-js](https://github.com/spark/particle-api-js) node package
-                                         | | *Recommended:* Text editor/IDE such as [Code](http://code.visualstudio.com)
+**While IoT4ETA might help you beat Friday afternoon gridlock, its true *raison d'etre* is to demonstrate how quickly and easily information and insights from the web can be brought into the physical world through IoT devices and [node.js on Azure](https://azure.microsoft.com/en-us/develop/nodejs/).** The methods used in this simple project can be reproduced to tap into the vast data made available through web APIs and to create from them meaningful physical manifestations.
 
 
-## Step 1: Install node, git, and npm or bower
-Many developers already have these tools installed. If you do, feel free to skip this step. Otherwise, here are the links to [node](http://nodejs.org), [git](https://git-scm.com/), [npm](https://www.npmjs.com/), and [bower](http://www.bower.org). These tools have a considerable learning curve for beginners, so if they're completely new to you, take a break, read up on them, and come back when you're ready.
+## Materials and prerequisites list
 
-## Step 2: Set up your Photon and Particle Build account
-Particle has a great [Photon setup guide](https://docs.particle.io/guide/getting-started/start/photon/) that walks you through connecting your Photon device to the internet and getting set up in the Particle Build programming environment. If you haven't already, complete steps 1-7. Connect your Photon to power via USB; if set up correctly to WiFi, the Photon will display a gently pulsing cyan light. Then, log in to the [Particle Build IDE](http://build.particle.io). On the left sidebar, choose Devices (the crosshair) and confirm that your device appears in the list as has a pulsing cyan circle next to it. *Hint: If you've registered more than one Photon device, be sure to choose your active device by clicking the star to the left of its name.* Finally, choose Settings (the gear) and make note of your access token. *Hint: Take care not to post, share, or upload access tokens and keys.*
+[ ] [Particle Photon](http://particle.io) WiFi-enabled microcontroller with MicroUSB-to-USB cable
 
-## Step 3: Set up your Bing Maps developer account
-We'll use the Bing Maps Traffic API for finding traffic along a certain driving route. To use the API, we'll need an API key, and to get that, we need to register for a [Bing Maps developer account](http://bingmapsportal.com) and register our app. Use of the API is free for most small, non-commercial projects. Once you've registered your soon-to-exist app, choose My Account > My Keys, and take note of the very long key.
+[ ] For local testing of node app: [node](http://nodejs.org), [git](https://git-scm.com/), [npm](https://www.npmjs.com/) _or_ [bower](http://www.bower.io), and a text editor/IDE such as [Code](http://code.visualstudio.com)
 
-## Step 4: Save the iot4eta repository locally and install node dependencies
-Using a tool such as Git Bash/Terminal, the Git for Windows client, or Github's web interface, clone (or download) the iot4eta repository ([https://github.com/hxlnt/iot4eta.git](https://github.com/hxlnt/iot4eta.git)) to your local machine. Then, install node dependencies by navigating to the new directory in CLI and entering ``npm install``. A new folder called node_modules should be created inside the iot4eta repository folder.
+[ ] For deployment of node app to Azure: [Azure account](http://portal.azure.com/) (free trial or paid), [git](https://git-scm.com/) _or_ [GitHub account](http://www.github.com)
+
+
+## Quickstart guide
+
+[ ] [Set up your Photon and Particle Build account](https://docs.particle.io/guide/getting-started/start/photon/) (steps 1-7). Connect your Photon to power via USB; if set up correctly to WiFi, the Photon will display a gently pulsing cyan light. Then, log in to the [Particle Build IDE](http://build.particle.io). On the left sidebar, choose Devices (the crosshair) and confirm that your device appears in the list as has a pulsing cyan circle next to it. *Hint: If you've registered more than one Photon device, be sure to choose your active device by clicking the star to the left of its name.* Finally, choose Settings (the gear) and make note of your access token.
+
+[ ] Register for a [Bing Maps developer account](http://bingmapsportal.com) to get access to the Bing Maps Traffic API and an API key (free for most small, non-commercial projects). Once you've registered your soon-to-exist app, the API key can be found by choosing My Account > My Keys.
+
+[ ] Clone the IoT4ETA repository ([https://github.com/hxlnt/iot4eta.git](https://github.com/hxlnt/iot4eta.git)). Install node dependencies if you plan on testing locally.
+
 
 
 

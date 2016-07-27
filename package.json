@@ -1,0 +1,14 @@
+{
+  "name": "iot4eta",
+  "version": "1.0.0",
+  "description": "A small, internet-connected light that alerts you about current traffic on your commute.",
+  "main": "server.js",
+  "dependencies": {
+    "particle-api-js": "^5.3.0"
+  },
+  "author": "Rachel Weil",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "license": "ISC"
+}

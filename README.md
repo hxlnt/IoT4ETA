@@ -16,18 +16,18 @@ IoT4ETA brings together a [Particle Photon](http://particle.io) microcontroller 
 
 ## Materials and prerequisites list
 
-[ ] [Particle Photon](http://particle.io) WiFi-enabled microcontroller with MicroUSB-to-USB cable
+- [ ] [Particle Photon](http://particle.io) WiFi-enabled microcontroller with MicroUSB-to-USB cable
 
-[ ] For local testing of node app: [node](http://nodejs.org), [git](https://git-scm.com/), [npm](https://www.npmjs.com/) _or_ [bower](http://www.bower.io), and a text editor/IDE such as [Code](http://code.visualstudio.com)
+- [ ] For local testing of node app: [node](http://nodejs.org), [git](https://git-scm.com/), [npm](https://www.npmjs.com/) _or_ [bower](http://www.bower.io), and a text editor/IDE such as [Code](http://code.visualstudio.com)
 
-[ ] For deployment of node app to Azure: [Azure account](http://portal.azure.com/) (free trial or paid), [git](https://git-scm.com/) _or_ [GitHub account](http://www.github.com)
+- [ ] For deployment of node app to Azure: [Azure account](http://portal.azure.com/) (free trial or paid), [git](https://git-scm.com/) _or_ [GitHub account](http://www.github.com)
 
 
 ## Quickstart guide
 
-[ ] [Set up your Photon and Particle Build account](https://docs.particle.io/guide/getting-started/start/photon/) (steps 1-7). Connect your Photon to power via USB; if set up correctly to WiFi, the Photon will display a gently pulsing cyan light. Then, log in to the [Particle Build IDE](http://build.particle.io). On the left sidebar, choose Devices (the crosshair) and confirm that your device appears in the list as has a pulsing cyan circle next to it. *Hint: If you've registered more than one Photon device, be sure to choose your active device by clicking the star to the left of its name.* Finally, choose Settings (the gear) and make note of your access token.
+- [ ] [Set up your Photon and Particle Build account](https://docs.particle.io/guide/getting-started/start/photon/) (steps 1-7). Connect your Photon to power via USB; if set up correctly to WiFi, the Photon will display a gently pulsing cyan light. Then, log in to the [Particle Build IDE](http://build.particle.io). On the left sidebar, choose Devices (the crosshair) and confirm that your device appears in the list as has a pulsing cyan circle next to it. *Hint: If you've registered more than one Photon device, be sure to choose your active device by clicking the star to the left of its name.* Finally, choose Settings (the gear) and make note of your access token.
 
-[ ] Register for a [Bing Maps developer account](http://bingmapsportal.com) to get access to the Bing Maps Traffic API and an API key (free for most small, non-commercial projects). Once you've registered your soon-to-exist app, the API key can be found by choosing My Account > My Keys.
+- [ ] Register for a [Bing Maps developer account](http://bingmapsportal.com) to get access to the Bing Maps Traffic API and an API key (free for most small, non-commercial projects). Once you've registered your soon-to-exist app, the API key can be found by choosing My Account > My Keys.
 
 [ ] Clone the IoT4ETA repository ([https://github.com/hxlnt/iot4eta.git](https://github.com/hxlnt/iot4eta.git)). Install node dependencies if you plan on testing locally.
 

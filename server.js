@@ -1,13 +1,3 @@
-//////////////// IoT4ETA //////////////
-//
-// Make a small, internet-connected light that alerts you about current traffic on your commute.
-// Suitable for beginners! Easy! Adaptable! Fun! Non-toxic!
-// Level up on basic * Javascript * electronics * node deployment to Azure * web APIs * microcontrollers *
-// Project instructions at github.com/hxlnt/iot4eta
-// IoT4ETA ("Internet of Things 4 Estimated Time of Arrival") by Rachel Simone Weil <3
-// 
-///////////////////////////////////////
-
 //////// Customize this data! /////////
 //
 var startpoint = "Microsoft, 10900 Stonelake Blvd. Austin, TX 78759"; // Commute starting address

@@ -8,3 +8,31 @@ Level up on basic * Javascript * electronics * node on [Azure](http://azure.micr
 Follow along with step-by-step instructions at [github.com/hxlnt/iot4eta](http://www.github.com/hxlnt/iot4eta)
 
 IoT4ETA ("Internet of Things 4 Estimated Time of Arrival") by [Rachel Simone Weil](http://www.nobadmemories.com/) <3
+
+## What you'll need
+This is a preview of the materials, software, and accounts you'll need for this project. Don't worry if you don't recognize or know how to get a hold of these things--the step-by-step instructions will guide you through setup!
+
+Materials | Accounts and credentials | (Free) software and packages
+--------- | ------------------------ | ----------------------------
+[Particle Photon](http://particle.io) | WiFi access | [node](http://nodejs.org)
+MicroUSB-to-USB cable | [Particle Build account](http://build.particle.io) (free) | [git](https://git-scm.com/)
+PC or Mac with a USB port | [Bing Maps developer account](http://bingmapsportal.com) (free) | [npm](https://www.npmjs.com/) or [bower](http://www.bower.org)
+*Recommended:* Mini-breadboard, LEDs, LCD display, art supplies, or other goodies for customizing this project | *Recommended:* [Azure account](http://portal.azure.com/) (free trial or paid) for hosting node app in the cloud | [Particle phone app](https://docs.particle.io/guide/getting-started/start/photon/#prerequisites-for-setup) or the Particle CLI for [Windows](https://docs.particle.io/guide/getting-started/connect/photon/#using-windows) or [Mac OS X](https://docs.particle.io/guide/getting-started/connect/photon/#using-osx)
+                                         | | [particle-api-js](https://github.com/spark/particle-api-js) node package
+                                         | | Text editor/IDE such as [Code](http://code.visualstudio.com)
+
+
+## Step 0: Install node, git, and npm or bower
+Many developers already have these tools installed. If you do, feel free to skip this step. Otherwise, here are the links to [node](http://nodejs.org), [git](https://git-scm.com/).
+
+## Step 1: Set up your Photon and Particle Build account
+Particle has a great [Photon setup guide](https://docs.particle.io/guide/getting-started/start/photon/) that walks you through connecting your Photon device to the internet and getting set up in the Particle Build programming environment. If you haven't already, complete steps 1-7. Connect your Photon to power via USB; if set up correctly to WiFi, the Photon will display a gently pulsing cyan light. Then, log in to the [Particle Build IDE](http://build.particle.io). On the left sidebar, choose Devices (the crosshair) and confirm that your device appears in the list as has a pulsing cyan circle next to it. *Hint: If you've registered more than one Photon device, be sure to choose your active device by clicking the star to the left of its name.* Finally, choose Settings (the gear) and make note of your access token. *Hint: Take care not to post, share, or upload access tokens and keys.*
+
+## Step 2: Set up your Azure account
+
+## Step 3: Set up your Bing Maps developer account
+
+
+
+ 
+ 

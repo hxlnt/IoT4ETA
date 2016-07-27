@@ -1,11 +1,11 @@
 # IoT4ETA
 ````
-Make a tiny, internet-connected lantern that alerts you about current traffic on your commute.
+IoT4ETA ("Internet of Things 4 Estimated Time of Arrival") is a tiny, internet-connected lantern that alerts you about current traffic on your commute.
 
 Suitable for beginners! Easy! Adaptable! Fun! Non-toxic!
-
-IoT4ETA ("Internet of Things 4 Estimated Time of Arrival") by Rachel Simone Weil <3
 ````
+
+![iot4eta-hiQ.gif](iot4eta-hiQ.gif)
 
 ## Overview and purpose
 

@@ -11,9 +11,9 @@ Suitable for beginners! Easy! Adaptable! Fun! Non-toxic!
 
 ## Overview and purpose
 
-IoT4ETA brings together a [Particle Photon](http://particle.io) microcontroller and the [Bing Maps Routes API](https://msdn.microsoft.com/en-us/library/ff701713.aspx) to give you real-time traffic updates about a given driving commute. In this project, the Photon's on-board blue LED is used to signify little-to-no traffic delay (an illuminated light), moderate traffic delays (a slowly flashing light), or severe traffic delays (a rapidly flashing light). The start and endpoints of the driving route and traffic delay tolerances are customizable. Though not detailed here, the use of the Bing Maps APIs could be further expanded to monitor public transportation delays or to display graphic or textual information about roadway construction, for example.
+IoT4ETA brings together a [Particle Photon](http://particle.io) microcontroller and the [Bing Maps Routes API](https://msdn.microsoft.com/en-us/library/ff701713.aspx) to give you real-time traffic updates about a given driving commute. In this project, the Photon's on-board blue LED flashes at varying rates to indicate little, moderate, or severe traffic delays. The start and endpoints of the driving route and traffic delay tolerances are customizable.
 
-**While IoT4ETA might help you beat Friday afternoon gridlock, its true *raison d'etre* is to demonstrate how quickly and easily information and insights from the web can be brought into the physical world through IoT devices and [node.js on Azure](https://azure.microsoft.com/en-us/develop/nodejs/).** The methods used in this simple project can be reproduced to tap into the vast data made available through web APIs and to create from them meaningful physical manifestations.
+**While IoT4ETA might help you beat Friday afternoon gridlock, its true *raison d'etre* is to serve as a template for bringing information from the web into the physical world via IoT devices and [node.js on Azure](https://azure.microsoft.com/en-us/develop/nodejs/).** The methods used in this simple project can be reproduced to tap into the vast data made available through web APIs and to create from them meaningful physical manifestations.
 
 
 ## How does it work?
